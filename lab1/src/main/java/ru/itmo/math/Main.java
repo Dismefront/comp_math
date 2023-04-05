@@ -5,6 +5,7 @@ import main.java.ru.itmo.math.handlers.FileReader;
 import main.java.ru.itmo.math.methods.GaussSeidelMethod;
 import main.java.ru.itmo.math.methods.IterMethod;
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Main {
@@ -24,6 +25,10 @@ public class Main {
                 }
             } catch (NullPointerException e) {
                 System.out.println("На главной диагонали 0 - плохо дело!");
+                System.exit(0);
+            }
+            catch (NoSuchElementException e) {
+                System.out.println("no ctrl-d??!");
                 System.exit(0);
             }
 

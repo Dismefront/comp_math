@@ -42,9 +42,9 @@ public class ConsoleReader {
             try {
                 for (int i = 0; i < size; i++) {
                     for (int j = 0; j < size; j++) {
-                        a[i][j] = Double.parseDouble(scanner.next());
+                        a[i][j] = Double.parseDouble(scanner.next().replace(',', '.'));
                     }
-                    b[i] = Double.parseDouble(scanner.next());
+                    b[i] = Double.parseDouble(scanner.next().replace(',', '.'));
                 }
                 flag = true;
             } catch (NumberFormatException e) {
