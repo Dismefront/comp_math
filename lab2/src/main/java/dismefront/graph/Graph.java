@@ -20,7 +20,7 @@ public class Graph {
         for (Function f : functions) {
             XYSeries series = new XYSeries(f.toString());
             for (double x = xMin; x <= xMax; x += 0.1) {
-                series.add(x, f.f(x));
+                series.add(x, f.f(x, 0));
             }
             dataset.addSeries(series);
         }

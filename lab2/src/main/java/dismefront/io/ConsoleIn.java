@@ -43,7 +43,7 @@ public class ConsoleIn {
         Scanner scanner = getScanner();
         double choice;
         try {
-            choice = Double.parseDouble(scanner.next());
+            choice = Double.parseDouble(scanner.next().replace(",", "."));
         } catch (NumberFormatException ex) {
             throw new RuntimeException();
         } catch (NoSuchElementException ex) {
