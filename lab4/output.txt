@@ -1,0 +1,2 @@
+Pearson correlation for linear function: -0.045014857416243025
+Best approximation function: Polynomial 2D

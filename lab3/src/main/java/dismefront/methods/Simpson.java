@@ -9,7 +9,7 @@ public class Simpson implements Calculate {
         double oldIntegral = Double.MAX_VALUE;
         double integral = 0.0;
 
-        while (Math.abs(integral - oldIntegral) > epsilon) {
+        while (Math.abs(integral - oldIntegral) / (Math.pow(2, 4) - 1) > epsilon) {
             n *= 2;
             double h = (b - a) / n;
             oldIntegral = integral;
