@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>x</th>
+        <th>y</th>
+        <th>f(x,y)</th>
+        <th>Точное решение</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="i : ${result}">
+        <td th:each="j : ${i}">
+            <span th:text="${j}"></span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="Chart">
+    <img src="/chart" width="1000" th:src="@{/chart}"/>
+</div>
+<h1>Данные отображены в пределах [-100; 100]</h1>
+<h2>Если не видите своих данных то значит они не отображены в пределах -100;100</h2>
+<h3>warning: ваш диапазон a;b может быть очень большим для вычисления</h3>
+</body>
+</html>

@@ -6,7 +6,7 @@ import java.awt.*;
 public class BaseFrame {
 
     private JFrame frame;
-    private final String title = "Laboratory work 3";
+    private final String title = "Laboratory work 5";
     private final int screenWidth = 800;
     private final int screenHeight = 600;
 

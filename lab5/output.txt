@@ -1,2 +1,2 @@
-Pearson correlation for linear function: -1.706773988609747
-Best approximation function: -1.7067739886098252
+Pearson correlation for linear function: -6.746294185266423
+Best approximation function: -6.746294185266422
